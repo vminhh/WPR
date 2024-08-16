@@ -1,0 +1,9 @@
+h2
+#intro
+#intro h2
+#content h2   
+#footer h2
+#content p
+#content > p
+.bodered
+h2 .bodered
