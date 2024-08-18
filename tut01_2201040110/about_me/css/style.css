@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: whitesmoke;
+    color: black;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: whitesmoke; 
+    padding: 15px 30%;
+    transition: all 0.4s ease;
+}
+
+header.sticky{
+    padding: 10px 15%;
+}
+
+
+#navi{
+    display: flex;
+}
+
+#navi a{
+    color: black;
+    padding: 10px 20px;
+    margin: 5px 7px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 5px solid transparent;
+    transition: all 0.4s ease ;
+}
+
+#navi a:hover{
+    border-bottom: 1px solid ;
+    color: peru;
+}
+
+section{
+    padding: 90px 15% 100px;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about div p {
+    margin-bottom: 10px;
+}
+
+#about #abt1 img {
+    width: 230px;
+    height: 230px;
+    padding: 10px 10px;
+}
+
+#about #abt2 img {
+    width: 500px;
+    height: 400px;
+}
+
+#edu div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#edu div .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#edu div .left img {
+    width: 300px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+#edu div .right {
+    flex: 1;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+#course {
+    padding-left: 20px;
+    margin-top: 30px; 
+}
