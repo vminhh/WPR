@@ -34,7 +34,7 @@
                             "Infinite solutions.";
                     else
                         document.getElementById("result").textContent =
-                            "The equation has no root!";
+                            "No root!";
                 } else
                     document.getElementById("result").textContent =
                         "One real root: " + -b / c;
