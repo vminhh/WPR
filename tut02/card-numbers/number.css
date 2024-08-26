@@ -1,0 +1,27 @@
+.card{
+    width: 500px;
+    height: 200px;
+    border: 0.5em solid #698733 ;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card img{
+    height: 70%;
+}
+#reverse{
+    flex-direction: row-reverse;
+}
+#order-formated img:nth-child(1){
+    order: 4;
+}
+#order-formated img:nth-child(2){
+    order: 3;
+}
+#order-formated img:nth-child(3){
+    order: 1;
+}
+#order-formated img:nth-child(4){
+    order: 2;
+}
