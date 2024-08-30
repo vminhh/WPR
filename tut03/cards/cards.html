@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Card Boards</title>
+        <style>
+            body {
+                text-align: center;
+                color: aliceblue;
+                background-color: gray;
+            }
+            #card-board {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                padding-top: 100px;
+            }
+            .card {
+                height: 150px;
+                cursor: pointer;
+                transition: height 0.3s ease;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Card boards</h2>
+        <div id="card-board"></div>
+        <script src="cards.js"></script>
+    </body>
+</html>
