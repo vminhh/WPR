@@ -38,6 +38,7 @@ button {
 }
 
 .post {
-  border: 1.5px blue solid;
+  border: 1px gray solid;
   margin-bottom: 8px;
+  background-color: whitesmoke;
 }
