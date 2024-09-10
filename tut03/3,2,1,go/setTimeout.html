@@ -7,21 +7,14 @@
     </head>
     <body>
         <script>
-            'use strict';
-            function countdown() {
-                console.log('3');
-                setTimeout(() => {
-                    console.log('2');
-                    setTimeout(() => {
-                        console.log('1');
-                        setTimeout(() => {
-                            console.log('Go!');
-                        }, 1000);
-                    }, 1000);
-                }, 1000);
+            function countdown(cnt) {
+                if (cnt > 0) {
+                    console.log(cnt);
+                    setTimeout(countdown, 1000, cnt - 1);
+                } else console.log('Go');
             }
 
-            countdown();
+            setTimeout(countdown, 1000, (cnt = 3));
         </script>
     </body>
 </html>

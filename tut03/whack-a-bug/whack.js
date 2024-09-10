@@ -23,7 +23,7 @@
      */
     function whackBug() {
         if (!this.classList.contains('whacked')) {
-            this.src = ' bug-whacked.png';
+            this.src = 'bug-whacked.png';
             this.classList.add('whacked');
 
             let score = id('score');

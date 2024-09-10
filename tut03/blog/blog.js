@@ -18,21 +18,21 @@
      * adds a blog entry to the blog post page
      */
     function addEntry() {
-        let dateValue = id('date').value;
-        let entryValue = id('entry').value;
+        let dValue = id('date').value;
+        let eValue = id('entry').value;
 
         let article = gen('article');
         article.classList.add('post');
 
         let heading = gen('h3');
-        heading.textContent = 'Date: ' + dateValue;
+        heading.textContent = 'Date: ' + dValue;
         article.appendChild(heading);
 
         let paragraph = gen('p');
-        paragraph.textContent = 'Entry: ' + entryValue;
+        paragraph.textContent = 'Entry: ' + eValue;
         article.appendChild(paragraph);
 
-        article.addEventListener('db', function () {
+        article.addEventListener('dblclick', function () {
             article.remove();
             if (qsa('.post').length < 3) {
                 qs('button').disabled = false;
