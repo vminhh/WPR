@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Promise Rejection</title>
+    </head>
+    <body>
+        <button>Reject Promise</button>
+        <div>Promise resolved in 5 seconds</div>
+
+        <script>
+            window.onload = function () {
+                let btn = document.querySelector('button');
+                let div = document.querySelector('div');
+                let timerId = null;
+                let cd = 5;
+
+                let promise = new Promise((resolve, reject) => {
+                    timerId = setInterval(() => {
+                        div.textContent = `Promise resolved in ${cd} seconds`;
+                        cd--;
+
+                        if (cd < 0) {
+                            clearInterval(timerId);
+                            resolve('Promise has resolved');
+                        }
+                    }, 1000);
+
+                    btn.addEventListener('click', () => {
+                        clearInterval(timerId);
+                        reject('Promise has failed to resolve');
+                    });
+                });
+
+                promise
+                    .then((message) => (div.textContent = message))
+                    .catch((errMessage) => (div.textContent = errMessage));
+            };
+        </script>
+    </body>
+</html>
